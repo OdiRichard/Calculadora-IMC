@@ -32,3 +32,11 @@ function cliqueAqui() {
 
   console.log(valor);
 }
+
+function cliqueAqui1() {
+  let nome = document.getElementById("nome1").value;
+  let idade = document.getElementById("idade").valueAsNumber;
+  let peso = document.getElementById("peso1").valueAsNumber;
+  let altura = document.getElementById("altura1").valueAsNumber;
+  let resposta1 = document.getElementById("valor1");
+}
