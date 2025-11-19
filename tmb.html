@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <title>TMB</title>
   </head>
   <body>
@@ -26,8 +33,14 @@
             <input type="number" name="altura" id="altura1" />
             <div>
               <p></p>
+              <label for="sexo">Selecione seu sexo aqui:</label>
+              <select id="sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+              </select>
+              <p></p>
               <button onclick="cliqueAqui1()">Enviar</button>
-              <h1 id="valor">O seu TMB aparecerá aqui.</h1>
+              <h1 id="valor1">O seu TMB aparecerá aqui.</h1>
             </div>
           </div>
         </div>
