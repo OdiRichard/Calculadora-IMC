@@ -1,8 +1,23 @@
 body {
-  font-family: "Inter", Arial, sans-serif;
-  background: #f5f6fa;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #49e4ff, #9ff4ff, #3bfaca, #8efff6);
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+  filter: brightness(1.1) saturate(1.2);
+}
+/* Cria animação fluída para o fundo. */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .container {
@@ -76,4 +91,25 @@ select {
   border: 1px solid ccc;
   font-size: 16px;
   margin: 12px 0;
+}
+
+#Health {
+  width: 700px;
+  flex-direction: column;
+}
+
+.btn-voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-voltar:hover {
+  background-color: #0b5ed7;
 }

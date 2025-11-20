@@ -7,8 +7,12 @@ function cliqueAqui() {
   let resposta = document.getElementById("valor");
 
   if (!nome || !peso || !altura) {
-    resposta.textContent = "Preencha tudo corretamente!";
+    alert("Preencha tudo corretamente!");
     return;
+  }
+
+  if (altura > 3) {
+    altura = altura / 100;
   }
 
   let valor = peso / (altura * altura);
@@ -44,6 +48,15 @@ function cliqueAqui1() {
   let altura = document.getElementById("altura1").valueAsNumber;
   let sexo = document.getElementById("sexo").value;
   let resposta1 = document.getElementById("valor1");
+
+  if (!nome || !idade || !peso || !altura || !sexo) {
+    alert("Preencha tudo corretamente!");
+    return;
+  }
+
+  if (altura > 3) {
+    altura = altura / 100;
+  }
 
   let tmb = 0;
 
